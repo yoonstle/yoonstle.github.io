@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "github 협업을 위한 필수 도구 (1) - 윤슬"
+date:   2023-10-25 20:00:00 
+categories: git github
+---
+어떤 프로젝트라도 github 없이 협업이 가능은 할까? 싶을 정도로 버젼 관리의 필수 툴인 github을 알아보자 !!  
+이 포스트에선 일단 실제로 바로 사용 할수 있게 실무에 꼭 필요한 github의 기본적인 것만 설명한다
+
+<!--주석으로 사용함 -->
+### git이 뭐지? 
+    "Git"은 분산 버전 관리 시스템으로, 개발자들이 소프트웨어 프로젝트를 협업하고 관리하기 위해 사용하는  
+     도구입니다. Git은 소스 코드의 변경 내역을 추적하고 여러 명의 개발자가 동시에 작업할 수 있는 기능을  
+     제공합니다. Git을 사용하면 프로젝트의 버전을 관리하고 이전 상태로 되돌릴 수 있으며, 여러 브랜치에서  
+     개발을 병렬로 진행할 수도 있습니다. Git은 Linux 커널의 창시자인 리누스 토르발즈(Linus Torvalds)가  
+     만들었으며 오픈 소스로 제공되며, 많은 개발자와 프로젝트에서 널리 사용되고 있습니다. Git을 배우고  
+     사용하면 개발자들은 코드를 효과적으로 협업하고 관리할 수 있으며, 버전 관리와 형상 관리를 효율적으로  
+     수행할 수 있습니다.
+
+### github는 또 뭘까?
+    GitHub은 개발자들을 위한 코드 호스팅 플랫폼으로, Git 버전 관리 시스템을 기반으로 하며, 소프트웨어  
+    개발 프로젝트를 관리하고 협업하는 데 도움을 주는 도구입니다. GitHub은 오픈 소스 프로젝트와 비공개  
+    프로젝트 모두를 지원하며, 다양한 형태의 코드, 문서 및 기타 리소스를 저장하고 공유할 수 있습니다.  
+    개발자들은 GitHub을 사용하여 소스 코드를 협력하고 문제를 추적하며, 팀원들과 소통하며 개발 프로  
+    세스를 효율적으로 관리할 수 있습니다. 또한 GitHub은 다양한 기능과 통합을 제공하여 개발 작업을  
+    단순화하고 개선하는데 도움을 줍니다
+
+### 자신의 컴퓨터에 git 설치
+    [git](https://git-scm.com/) 에 가서 설치 파일을 다운 받아 설치한다
+
+### github 계정 개설
+    [github](https://github.com/) 에 가서 sign up 을 하고 내 걔정을 개설한다
+
+### Github 에서 source 의 흐름 도식 
+<img src="/img/github_figure.png" width="500px" height="400px" title="px(픽셀) 크기 설정" alt="github_figure"><br/>  
+
+### Fork 
+     협업 관리자 혹은 public에 개방된 repository(저장소)에서 내 repository로 source를 복사 하는  
+     것이라 보면 된다. 포크로 source를 찍어 내 repository에 넣는다
+
+<img src="/img/fork.png" width="1200px" height="450px" title="px(픽셀) 크기 설정" alt="fork"><br/>  
+
+### Clone 
+     "GitHub clone"는 GitHub의 내 repository의 내용을 로컬 컴퓨터로 복사하는 명령입니다.   
+     GitHub 저장소는 버전 관리 시스템인 Git을 사용하여 코드와 파일을 호스팅하는 웹 플랫폼입니다.  
+     GitHub clone 명령을 사용하여 저장소를 복제하면 원격 저장소의 모든 파일과 히스토리를 로컬 컴퓨터로  
+     가져올 수 있습니다.
+
+#### 내 repository의 web URL을 copy 한다
+<img src="/img/clone_copy.png" width="1200px" height="450px" title="px(픽셀) 크기 설정" alt="clone_copy"><br/>  
+
+#### 작업할 디렉토리를 만들고 clone 한다
+    > git clone <위에서 copy한 내 repository의 URL 붙여넣기> 
+
+### Push
+     로컬 저장소의 변경 사항을 나의 repository로 업로드
+    > git push
+
+### Pull Request
+    코드 변경 사항을 처음 Fork 받았던 협업 관리자에게 보내 관리자로 하여금 기존 코드베이스에 병합하기  
+    전에 검토하고 승인을 받는 프로세스를 나타냅니다.
+    
+<img src="/img/pull_request.png" width="500px" height="400px" title="px(픽셀) 크기 설정" alt="pull_request"><br/>  
+
+
+git 과 github 의 모든 내용을 하나의 포스트에 다루기엔 너무 방대한 양이라 동아리 협업을 위한 최소한의  
+사용법만 다루었습니다. 아무리 작은 프로젝트라도 두명 이상이 협업을 한다면 무조건 사용해야 할 도구라고  
+생각 합니다. 현업에서도 그렇게 알려져 있다고 알고 있습니다.
